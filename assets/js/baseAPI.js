@@ -1,7 +1,7 @@
 // 每次调用$.ajax()、$.get()、$.post()时，会调用这个函数
 $.ajaxPrefilter(function(options){
     options.url="http://www.liulongbin.top:3007" +options.url
-    // 判断表头有没有字符
+    // 判断表头有没有字符   /my/文件即为需要权限的文件
     if(options.url.indexOf('/my/')!== -1){
         // 统一为有权限的接口设置headers请求头
       options.headers ={

@@ -49,6 +49,7 @@ function renderAvatar(user){
         $('.text-avatar').hide()
     }else{
         $('.layui-nav-img').hide()
+        // 首字符大写
         var first =name[0].toUpperCase()
         $('.text-avatar').html(first).show()
     }
